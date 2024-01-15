@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Mynavbar from "./component/Navbar";
+import "./App.css";
+import Telelist from "./Telelist";
+import Createfilm from "./Createfilm";
 
 function App() {
+  const [movies, setMovies] = useState([]);
+
+  const addMovie = (newMovie) => {
+    setMovies([...movies, newMovie]);
+  };
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Mynavbar />
+      <Telelist movies={movies} />
+      <Createfilm addMovie={addMovie} />
+    </>
   );
 }
 
