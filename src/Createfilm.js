@@ -28,7 +28,7 @@ const Createfilm = ({ addMovie }) => {
       description: "",
     }));
   };
-  
+
   return (
     <>
       <div className="div_parent">

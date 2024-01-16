@@ -10,12 +10,11 @@ function App() {
   const addMovie = (newMovie) => {
     setMovies([...movies, newMovie]);
   };
-  
+
   return (
     <>
       <Mynavbar />
       <Telelist movies={movies} />
-      <Createfilm addMovie={addMovie} />
     </>
   );
 }
