@@ -13,7 +13,7 @@ function App() {
 
   return (
     <>
-      <Mynavbar />
+      {/* <Mynavbar /> */}
       <Telelist movies={movies} />
     </>
   );
