@@ -2,35 +2,35 @@
     {
       "id":0,
       "Title": "Spider-man",
-      "note": "Film",
+      "note": "fiction",
       "description": "Spider-Man suit les aventures de Peter Parker, un lycéen mordu par une araignée radioactive, acquérant des pouvoirs surnaturels pour lutter contre le crime tout en jonglant avec les défis de la vie quotidienne à New York. Entre action spectaculaire et dilemmes personnels, Peter devient le célèbre héros masqué.",
       "image": "https://fr.web.img6.acsta.net/c_310_420/medias/nmedia/18/35/62/65/18754165.jpg"
     },
     {
       "id":1,
       "Title": "The hate you give",
-      "note": "Film",
+      "note": "action",
       "description": "The Hate U Give raconte l'histoire de Starr Carter, une adolescente qui jongle entre deux mondes différents après le meurtre de son meilleur ami par la police. Confrontée aux pressions sociales et aux enjeux raciaux, Starr prend position pour la justice et la vérité.",
       "image": "https://m.media-amazon.com/images/I/41WT+lMDJCL.jpg"
     },
     {
       "id":2,
       "Title": "The perfect date",
-      "note": "Film",
+      "note": "drame",
       "description": "The Perfect Date suit l'histoire de Brooks Rattigan, un lycéen qui crée une application pour offrir des rendez-vous personnalisés en fonction des souhaits de ses clients. Cependant, au fur et à mesure qu'il joue différents rôles, Brooks découvre que la véritable connexion émotionnelle ne peut pas être programmée.",
       "image": "https://jenrosewrites.files.wordpress.com/2019/10/img_0259.jpg?w=750"
     },
     {
       "id":3,
       "Title": "Tyler Rake 2",
-      "note": "Film",
+      "note": "action",
       "description": "Tyler Rake est le protagoniste du film d'action Extraction. Tyler Rake, joué par Chris Hemsworth, est un mercenaire et ancien soldat des forces spéciales chargé de sauver le fils d'un criminel international kidnappé à Dhaka, au Bangladesh. Le film est rempli d'action intense et de scènes de combat tout en explorant les conséquences émotionnelles de la mission de Tyler Rake.",
       "image": "https://fr.web.img3.acsta.net/pictures/23/06/01/14/15/4411275.jpg"
     },
     {
       "id":4,
       "Title": "Oppenheimer",
-      "note": "Film",
+      "note": "fiction",
       "description": "J. Robert Oppenheimer (1904-1967) était un physicien américain renommé, directeur scientifique du projet Manhattan pendant la Seconde Guerre mondiale, qui a abouti à la création de la première bombe atomique. Sa contribution à la physique théorique est indéniable, mais son héritage est entouré de controverses éthiques en raison de son rôle dans le développement de l'arme nucléaire et des implications de ses affiliations politiques pendant la guerre froide.",
       "image": "https://fr.web.img3.acsta.net/c_310_420/pictures/23/05/26/16/52/2793170.jpg"
 
@@ -39,17 +39,24 @@
     {
       "id":5,
       "Title": "Miss Bala",
-      "note": "Film",
-      "description": "J. Robert Oppenheimer (1904-1967) était un physicien américain renommé, directeur scientifique du projet Manhattan pendant la Seconde Guerre mondiale, qui a abouti à la création de la première bombe atomique. Sa contribution à la physique théorique est indéniable, mais son héritage est entouré de controverses éthiques en raison de son rôle dans le développement de l'arme nucléaire et des implications de ses affiliations politiques pendant la guerre froide.",
+      "note": "action",
+      "description": "Miss Bala est un thriller d'action réalisé par Catherine Hardwicke, racontant l'histoire d'une jeune femme, jouée par Gina Rodriguez, qui se retrouve involontairement impliquée dans le monde dangereux du trafic de drogue mexicain tout en luttant pour sa survie et la recherche de sa meilleure amie kidnappée. Le film explore la résilience et la force de caractère face à des circonstances extrêmes.",
       "image": "https://images-na.ssl-images-amazon.com/images/S/pv-target-images/628115dc3d26e0604b55578ea3f63cca896535595bc33ec9cdc1ce36be08cace._RI_TTW_.jpg"
     },
     {
       "id":6,
-      "Title": "Miss Bala",
-      "note": "Film",
-      "description": "J. Robert Oppenheimer (1904-1967) était un physicien américain renommé, directeur scientifique du projet Manhattan pendant la Seconde Guerre mondiale, qui a abouti à la création de la première bombe atomique. Sa contribution à la physique théorique est indéniable, mais son héritage est entouré de controverses éthiques en raison de son rôle dans le développement de l'arme nucléaire et des implications de ses affiliations politiques pendant la guerre froide.",
+      "Title": "scream",
+      "note": "film",
+      "description": "Scream est un film d'horreur américain réalisé par Wes Craven, sorti pour la première fois en 1996. Il s'agit d'un film slasher qui a marqué le genre en jouant avec les conventions du genre tout en les honorant. Voici une description générale du film :",
       "image": "https://filmartgallery.com/cdn/shop/products/Scream-2-Vintage-Movie-Poster-Original-1-Sheet-27x41.jpg?v=1663224906"
 
+    },
+    {
+      "id":7,
+      "Title": "La reine Charlotte",
+      "note": "serie",
+      "description": "La reine Charlotte, née en 1744, était l'épouse du roi George III du Royaume-Uni. Connu pour son soutien aux arts et son engagement social, elle était une figure respectée de la société britannique du XVIIIe siècle.",
+      "image": "https://www.crew-united.com/Media/Images/1803/1803263/1803263.entity.jpg"
     }
   ]
   

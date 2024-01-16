@@ -8,21 +8,34 @@ const Mynavbar = () => {
   // État pour gérer les données
   const [data, setData] = useState(movie);
 
+  // État pour gérer la valeur de l'input de recherche
+  const [searchInput, setSearchInput] = useState("");
+
+  // Fonction à appeler lors du changement de la valeur de l'input de recherche
+  const handleInputChange = (e) => {
+    setSearchInput(e.target.value);
+  };
+
   // Fonction à appeler lors du clic sur le bouton de recherche (search).
-  const search = (e) => {
-    e.preventDefault(); // Empêche le formulaire de se soumettre
+  const search = () => {
+    // Filtrer les films qui ont la même note que la valeur de l'input (insensible à la casse)
+    const matchingMovies = data.filter(
+      (movie) => movie.note.toLowerCase() === searchInput.toLowerCase()
+    );
 
-    // Récupérer la valeur de l'input
-    const inputValue = document.getElementsByClassName("submitsearch")[0].previousSibling.value;
-
-    // Vérifier si la valeur de l'input correspond à un titre de film existant
-    const matchingMovie = data.find((movie) => movie.title === inputValue);
-
-    if (matchingMovie) {
-      console.log(matchingMovie);
-      // Faire quelque chose avec les données du film correspondant
+    if (matchingMovies.length > 0) {
+      // Afficher les films correspondants
+      return matchingMovies.map((movie) => (
+        <div key={movie.id}>
+          <img src={movie.image}></img>
+          <h3>{movie.title}</h3>
+          <p>{movie.description}</p>
+          {/* Ajoutez d'autres éléments que vous souhaitez afficher */}
+        </div>
+      ));
     } else {
-      console.log("Film non trouvé");
+      // Aucun film trouvé
+      return <p>Aucun film trouvé</p>;
     }
   };
 
@@ -34,11 +47,18 @@ const Mynavbar = () => {
         </h2>
       </div>
       <div className="divsearch">
-        <input placeholder="Rechercher..."></input>
+        <input
+          placeholder="Rechercher..."
+          value={searchInput}
+          onChange={handleInputChange}
+        ></input>
         <Button variant="primary" className="submitsearch" onClick={search}>
           Rechercher
         </Button>{" "}
       </div>
+
+      {/* Affiche les films correspondants */}
+      <div className="matching-movies">{search()}</div>
     </nav>
   );
 };

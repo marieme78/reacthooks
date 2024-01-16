@@ -20,14 +20,11 @@ const Telelist = ({ movies }) => {
 
   return (
     <>
-    
       <div className="cardplayer">
         {/* Utiliser la méthode .filter avec la condition appropriée pour filtrer les films */}
-        {data
-          .filter((film) => film.note == inputValue)
-          .map((film, index) => (
-            <Moviecard key={index} {...film} />
-          ))}
+        {data.map((film, index) => (
+          <Moviecard key={index} {...film} />
+        ))}
       </div>
       {/* Composant pour créer un nouveau film */}
       <Createfilm addMovie={handleaddmovie} />
