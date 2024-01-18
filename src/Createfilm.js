@@ -10,7 +10,7 @@ const Createfilm = ({ addMovie }) => {
     image: "",
     description: "",
   });
-//mettre a jour chaque input apres changement.
+  //mettre a jour chaque input apres changement.
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setNewMovie({ ...newMovie, [name]: value });
@@ -34,11 +34,10 @@ const Createfilm = ({ addMovie }) => {
       <div className="div_parent">
         <div>
           <div className="title">
-            <h1 className="big_title">Mes choix</h1>
+            <h1 className="big_title">Découvre les nouveautés</h1>
           </div>
           <div className="added_film">
-            <p>Mes choix</p>
-          </div>
+          <iframe width="1280" height="720" src="https://www.youtube.com/embed/oZI2njF5rx0" title="Jumanji : Bienvenue dans la jungle - Bande-annonce 1 - VF" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className="jumanji_video"></iframe>          </div>
         </div>
         <div className="formulaire">
           <div className="title">

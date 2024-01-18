@@ -13,7 +13,7 @@ const Moviecard = ({ id, Title, note, description, image }) => {
           <Card.Title>{Title}</Card.Title>
           <Card.Title>{note}</Card.Title>
           <Card.Text>{description}</Card.Text>
-          <Button variant="primary">Ajouter</Button>
+          <Button variant="primary">Bande annonce</Button>
         </Card.Body>
       </Card>
       </div>
