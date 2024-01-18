@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Mynavbar from "./component/Navbar";
 import "./App.css";
 import Telelist from "./Telelist";
 import Createfilm from "./Createfilm";
@@ -13,7 +12,6 @@ function App() {
 
   return (
     <>
-      {/* <Mynavbar /> */}
       <Telelist movies={movies} />
     </>
   );

@@ -4,7 +4,6 @@ import movie from "./component/movie.json";
 import Createfilm from "./Createfilm";
 import Button from "react-bootstrap/Button";
 import "./App.css";
-import Card from "react-bootstrap/Card";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 // ...
@@ -28,7 +27,7 @@ const Telelist = ({ movies }) => {
   const search = () => {
     // Filtrer les films dont le genre contient la valeur de l'input (insensible à la casse)
     const matchingMovies = data.filter(
-      (movie) => movie.note.toLowerCase().includes(searchInput.toLowerCase())
+      (movie) => movie.Title.toLowerCase().includes(searchInput.toLowerCase())
     );
 
     if (matchingMovies.length > 0) {
