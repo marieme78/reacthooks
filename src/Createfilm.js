@@ -5,7 +5,7 @@ import "./App.css";
 
 const Createfilm = ({ addMovie }) => {
   const [newMovie, setNewMovie] = useState({
-    title: "",
+    Title: "",
     note: "",
     image: "",
     description: "",
@@ -22,7 +22,7 @@ const Createfilm = ({ addMovie }) => {
     addMovie(newMovie);
     setNewMovie((prevMovie) => ({
       ...prevMovie,
-      title: "",
+      Title: "",
       note: "",
       image: "",
       description: "",
@@ -34,14 +34,14 @@ const Createfilm = ({ addMovie }) => {
       <div className="div_parent">
         <div>
           <div className="title">
-            <h1 className="big_title">Découvre les nouveautés</h1>
+            <h1 className="big_title">Découvre les nouveautés 😍</h1>
           </div>
           <div className="added_film">
           <iframe width="1280" height="720" src="https://www.youtube.com/embed/oZI2njF5rx0" title="Jumanji : Bienvenue dans la jungle - Bande-annonce 1 - VF" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className="jumanji_video"></iframe>          </div>
         </div>
         <div className="formulaire">
           <div className="title">
-            <h1 className="big_title">Crée un film !</h1>
+            <h1 className="big_title">Crée un film !🎬</h1>
           </div>
           <div className="div_formulaire">
             <form>
@@ -54,8 +54,8 @@ const Createfilm = ({ addMovie }) => {
                     type="text"
                     id="title"
                     onChange={handleInputChange}
-                    name="title"
-                    value={newMovie.title}
+                    name="Title"
+                    value={newMovie.Title}
                   />
                 </li>
                 <li>
