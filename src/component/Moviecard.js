@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 
 const Moviecard = ({ id, Title, note, description, image }) => {
   return (
+    // création de card pour films
     <div className="item">
       <Card style={{ width: "18rem" }}>
         <Card.Img variant="top" src={image} />
@@ -13,6 +14,7 @@ const Moviecard = ({ id, Title, note, description, image }) => {
           <Card.Title>{Title}</Card.Title>
           <Card.Title>{note}</Card.Title>
           <Card.Text>{description}</Card.Text>
+          {/* linker le bouton avec le composant View(page) avec les routes */}
           <Link to={`/view/${id}`}>
             <Button variant="danger">
               Bande annonce

@@ -7,7 +7,6 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import View from "./component/View";
 
-// ...
 
 const Telelist = ({ movies }) => {
   const [data, setData] = useState(movie);
@@ -50,6 +49,7 @@ const Telelist = ({ movies }) => {
 
   return (
     <>
+    {/* creation de navbar */}
       <div
         style={{
           backgroundColor: "#FFB300C2",
@@ -58,6 +58,7 @@ const Telelist = ({ movies }) => {
           display: "flex",
         }}
       >
+        {/* creation de logo */}
         <div className="logo">
           <h1>
             <b>Ciné</b>
@@ -67,6 +68,7 @@ const Telelist = ({ movies }) => {
         <div style={{ display: "flex" }}>
           {" "}
           <h2 style={{ marginLeft: "60px" }}>
+            {/* creation de l'input de recherche */}
             <b>Recherche</b>
           </h2>
           <input
