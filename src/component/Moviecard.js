@@ -1,11 +1,11 @@
+import React from "react";
 import Button from "react-bootstrap/Button";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Card from "react-bootstrap/Card";
-import "../App.css"
+import { Link } from "react-router-dom";
 
 const Moviecard = ({ id, Title, note, description, image }) => {
   return (
-    <>
     <div className="item">
       <Card style={{ width: "18rem" }}>
         <Card.Img variant="top" src={image} />
@@ -13,11 +13,14 @@ const Moviecard = ({ id, Title, note, description, image }) => {
           <Card.Title>{Title}</Card.Title>
           <Card.Title>{note}</Card.Title>
           <Card.Text>{description}</Card.Text>
-          <Button variant="primary">Bande annonce</Button>
+          <Link to={`/view/${id}`}>
+            <Button variant="danger">
+              Bande annonce
+            </Button>
+          </Link>
         </Card.Body>
       </Card>
-      </div>
-    </>
+    </div>
   );
 };
 

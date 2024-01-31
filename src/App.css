@@ -8,15 +8,9 @@
 }
 .cardplayer{
   display: flex;
-  background-color: rgba(0, 0, 0, 0.95);
+  /* background-color: rgba(0, 0, 0, 0.95); */
   background-image: url(https://t4.ftcdn.net/jpg/04/70/51/03/360_F_470510398_o317bp2hmQBL31zWWKUKkslTfVnNZqOI.jpg);
   overflow: scroll;
-}
-nav{
-  display: flex;
-  justify-content: space-between;
-   background-color:#ffc03d;
-  height: 70px;
 }
 input{
   height: 40px;
@@ -173,4 +167,53 @@ li{
   width: 950px;
   height: 600px;
   border-radius: 30px;
+}
+.navlink{
+  text-decoration: none;
+  list-style: none;
+  list-style-type: none;
+  color: black;
+}
+.return_bar{
+  display: flex;
+  /* background-color: #ffc03d; */
+  background-color: red;
+  padding: 20px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+.return_image{
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+}
+.return_image2{
+  height: 40px;
+  width: 40px;
+  margin-bottom: 3px;
+}
+.div_return_bar{
+  background-color: #ffc03d;
+  padding: 10px;
+}
+.logo{
+  margin-left: -600px;
+}
+.view_big_div{
+  display: flex;
+  justify-content: space-around;
+}
+.description_div{
+  margin-left: 30px;
+  padding: 20px;
+  /* margin-right: 100px; */
+  height: 500px;
+  width: 500px;
+  border: #000 1px solid;
+  border-radius: 20px;
+  padding-top: 30px;
+}
+.trailer_video{
+  height: 500px;
+  width: 800px;
 }

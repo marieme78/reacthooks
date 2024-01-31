@@ -10,7 +10,7 @@ const Createfilm = ({ addMovie }) => {
     image: "",
     description: "",
   });
-  //mettre a jour chaque input apres changement.
+  //mettre à jour chaque input aprés changement.
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setNewMovie({ ...newMovie, [name]: value });
