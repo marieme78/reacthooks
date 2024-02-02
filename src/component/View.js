@@ -5,7 +5,7 @@ import movie from "./movie.json";
 
 const View = () => {
   // Récupérer l'ID à partir des paramètres de l'URL
-  const { id } = useParams(); 
+  const { id } = useParams();
   // Obtenir les clés (ID des films) du fichier JSON
   const keys = Object.keys(movie);
 
@@ -24,10 +24,10 @@ const View = () => {
           <div className="div_return_bar">
             <Link to="/"> Accueil</Link>
           </div>
-          
+
           {/* Titre du film */}
           <h1>{currentMovie.Title}</h1>
-          
+
           {/* Conteneur principal pour la vidéo et la description */}
           <div className="view_big_div">
             {/* Partie vidéo */}
@@ -38,7 +38,7 @@ const View = () => {
                 title="Bande-annonce"
               ></iframe>
             </div>
-            
+
             {/* Partie description */}
             <div className="description_div">
               {/* Note du film */}
@@ -51,6 +51,7 @@ const View = () => {
       );
     } else {
       // Gérer le cas où le film avec l'ID donné n'est pas trouvé
+      //gérer le cas ou le film avec l'id donné n'est pas trouvé
       return <div>Film non trouvé</div>;
     }
   } else {

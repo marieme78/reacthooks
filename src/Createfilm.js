@@ -15,7 +15,6 @@ const Createfilm = ({ addMovie }) => {
     const { name, value } = e.target;
     setNewMovie({ ...newMovie, [name]: value });
   };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("New Movie:", newMovie); // pour vérifier les données
@@ -37,7 +36,17 @@ const Createfilm = ({ addMovie }) => {
             <h1 className="big_title">Découvre les nouveautés 😍</h1>
           </div>
           <div className="added_film">
-          <iframe width="1280" height="720" src="https://www.youtube.com/embed/oZI2njF5rx0" title="Jumanji : Bienvenue dans la jungle - Bande-annonce 1 - VF" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen className="jumanji_video"></iframe>          </div>
+            <iframe
+              width="1280"
+              height="720"
+              src="https://www.youtube.com/embed/oZI2njF5rx0"
+              title="Jumanji : Bienvenue dans la jungle - Bande-annonce 1 - VF"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+              className="jumanji_video"
+            ></iframe>{" "}
+          </div>
         </div>
         <div className="formulaire">
           <div className="title">
@@ -56,6 +65,7 @@ const Createfilm = ({ addMovie }) => {
                     onChange={handleInputChange}
                     name="Title"
                     value={newMovie.Title}
+                    required
                   />
                 </li>
                 <li>
@@ -68,6 +78,7 @@ const Createfilm = ({ addMovie }) => {
                     onChange={handleInputChange}
                     name="note"
                     value={newMovie.note}
+                    required
                   />
                 </li>
                 <li>
@@ -80,6 +91,7 @@ const Createfilm = ({ addMovie }) => {
                     onChange={handleInputChange}
                     name="image"
                     value={newMovie.image}
+                    required
                   />
                 </li>
                 <li>
@@ -91,6 +103,7 @@ const Createfilm = ({ addMovie }) => {
                     name="description"
                     onChange={handleInputChange}
                     value={newMovie.description}
+                    required
                   ></textarea>
                 </li>
               </ul>

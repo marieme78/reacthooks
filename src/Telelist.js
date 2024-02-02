@@ -7,7 +7,6 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import View from "./component/View";
 
-
 const Telelist = ({ movies }) => {
   const [data, setData] = useState(movie);
   const handleaddmovie = (newmovie) => {
@@ -39,6 +38,7 @@ const Telelist = ({ movies }) => {
       ));
     } else {
       // Aucun film trouvé, retourner un message ou un composant indiquant qu'aucun film n'a été trouvé
+      // Aucun film trouvé, retourner un message ou un composant indiquant qu'aucun film n'a été trouvé
       return (
         <div>
           <p>Aucun film trouvé.</p>
@@ -49,7 +49,7 @@ const Telelist = ({ movies }) => {
 
   return (
     <>
-    {/* creation de navbar */}
+      {/* creation de navbar */}
       <div
         style={{
           backgroundColor: "#FFB300C2",
